@@ -25,7 +25,7 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ckeckbox 대화상자"
+        android:text="Checkbox 대화상자"
         />
 
     <Button
