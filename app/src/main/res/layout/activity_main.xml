@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/article"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="\n\n 한동대,‘공동체 발전을 위한 기업가정신 캠프’개최\n\n
+        한동대학교(총장 장순흥) 유네스코 유니트윈 사업단이 지난달 25일~27일 3일간 경주 켄싱턴 리조트에서 ‘공동체 발전을 위한 기업가정신 캠프(Entrepreneurship for Better Community Camp)’를 개최했다.\n
+        이번 캠프는 동남아시아 사회문제 분석·해결 비즈니스 모델 제작, 사회문제 해결 능력 향상 등 사회적 기업가정신 함양을 목표로 한동대와 경북대에 재학중인 캄보디아, 필리핀 등 아시아 지역 학생 21명이 참가했고, 조대연, 김대식 한동대 교수 등이 강사로 나섰다.\n
+        이번 캠프 참가자들은 사회문제, 기업가정신, 비즈니스 모델, 디자인 씽킹, 마케팅 등 창업에 필요한 이론 수업과 환경, 실업, 시장과 관련된 문제를 선정해 아이디어를 구체화하고, 자국에서 실현 가능한 비즈니스 모델을 만들어 발표했다.\n
+        이번 캠프 책임교수인 이유진 한동대 교수는“짧은 시간이었지만 학생들이 사회문제에 대해 깊이 고민해보고 사회적기업가의 자질을 위해 필요한 것을 많이 배울 수 있는 시간이었다”고 말했다.\n
+        또한, 한동대 유니트윈 사업단은 비즈니스 모델을 구체화해 사회문제 발굴·해결 능력을 향상시키는 다양한 프로그램을 제공할 예정이다."
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
