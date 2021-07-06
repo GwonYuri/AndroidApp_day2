@@ -1,5 +1,15 @@
 # AndroidApp_day2
 
+## Lab4 메뉴
+
+1. OptionsMenu(Toast 또는 메뉴2)중 선택한 항목 화면에 보여주기
+
+<img src = "https://user-images.githubusercontent.com/70666097/124655233-8d500300-deda-11eb-88a2-ead70815f4a1.png" width="200" height="300"> <img src = "https://user-images.githubusercontent.com/70666097/124655236-8de89980-deda-11eb-973f-9ebd889d8e42.png" width="200" height="300">
+
+2. ContextMenu(Edit, Share, Delete)중 선택한 항목 화면에 보여주기 (ContextMenu는 Text를 길게 눌러야 작동)
+
+<img src = "https://user-images.githubusercontent.com/70666097/124655244-8fb25d00-deda-11eb-8517-9e7cd35151dc.png" width="200" height="300"> <img src = "https://user-images.githubusercontent.com/70666097/124655246-904af380-deda-11eb-9aa4-e4821233f981.png" width="200" height="300">
+
 ## Lab5 대화상자
 
 <메인 화면>
