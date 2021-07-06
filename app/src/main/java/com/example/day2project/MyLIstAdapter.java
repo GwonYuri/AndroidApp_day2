@@ -12,17 +12,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MyLIstAdapter extends RecyclerView.Adapter<MyLIstAdapter.MyListViewHolder>{
-    Context conText;
+    Context context;
     ArrayList<String> data;
 
     MyLIstAdapter(Context conText,ArrayList<String> data){
-        this.conText=conText;
+        this.context=context;
         this.data=data;
     }
 
     @Override
     public MyListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater=LayoutInflater.from(conText);
+        LayoutInflater inflater=LayoutInflater.from(context);
         View view=inflater.inflate(R.layout.list_item,null);
         return new MyListViewHolder(view);
     }
@@ -37,17 +37,15 @@ public class MyLIstAdapter extends RecyclerView.Adapter<MyLIstAdapter.MyListView
         return data.size();
     }
 
-    class MyListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class MyListViewHolder extends RecyclerView.ViewHolder{
         TextView tv;
-
-        public MyListViewHolder(View itemView){
+        public MyListViewHolder(@NonNull View itemView) {
             super(itemView);
-            tv=itemView.findViewById(R.id.tvTitle);
-            tv.setOnClickListener(this);
+            tv = itemView.findViewById(R.id.tvTitle);
+            tv.setOnClickListener(this::onClick);
         }
 
-        @Override
-        public void onClick(View v) {
+        public void onClick(View V){
             tv.setText("Clicked - " + tv.getText().toString());
         }
     }

@@ -9,18 +9,17 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFEB3B"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        android:layout_marginRight="20dp"
+        app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/tvTitle"
+        android:textSize="20dp"
+        android:onClick="onClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="과일이름" />
 
 </LinearLayout>

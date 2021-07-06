@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.article);
+        article_text=findViewById(R.id.article);
         registerForContextMenu(article_text);
     }
 
@@ -35,13 +35,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId() == R.id.menu1){
-            displayToast();
+            displayToast("Clicked menu1");
+        }
+        else if(item.getItemId() == R.id.menu2){
+            displayToast("Clicked menu2");
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private void displayToast() {
-        Toast.makeText(this,"Clicked menu1", Toast.LENGTH_SHORT).show();
     }
 
     @Override

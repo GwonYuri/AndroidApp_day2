@@ -2,6 +2,8 @@ package com.example.day2project;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,6 +15,8 @@ public class MyListActivity extends AppCompatActivity {
     ArrayList<String> data = new ArrayList<>();
     MyLIstAdapter adapter;
     RecyclerView recyclerView;
+    TextView et;
+    Button bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,7 @@ public class MyListActivity extends AppCompatActivity {
 
     public void enAAA(View view){
         String newfruit =et.getText().toString();
+        data.add(newfruit);
         adapter.notifyDataSetChanged();
     }
 }
