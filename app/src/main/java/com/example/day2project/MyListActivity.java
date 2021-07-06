@@ -24,23 +24,32 @@ public class MyListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_list);
         init();
     }
-    private void init(){
+
+    private void init() {
         data.add("사과");
         data.add("바나나");
         data.add("체리");
 
         //recyclerview
-        adapter = new MyLIstAdapter(this,data);
-        recyclerView=findViewById(R.id.fruitlist);
+        adapter = new MyLIstAdapter(this, data);
+        recyclerView = findViewById(R.id.fruitlist);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
-        et=findViewById(R.id.etFruit);
+        et = findViewById(R.id.etFruit);
+        bt = findViewById(R.id.btnAdd);
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onAdd();
+            }
+
+            public void onAdd() {
+                String newfruit = et.getText().toString();
+                data.add(newfruit);
+                adapter.notifyDataSetChanged();
+            }
+        });
     }
 
-    public void enAAA(View view){
-        String newfruit =et.getText().toString();
-        data.add(newfruit);
-        adapter.notifyDataSetChanged();
-    }
 }
