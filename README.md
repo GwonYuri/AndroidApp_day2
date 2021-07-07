@@ -29,6 +29,11 @@
 
 <img src = "https://user-images.githubusercontent.com/70666097/124224786-46ac8280-db41-11eb-8015-9c5c45367263.png" width="200" height="300"> <img src = "https://user-images.githubusercontent.com/70666097/124224784-4613ec00-db41-11eb-8e2f-63e869448d44.png" width="200" height="300">
 
+
 4. 사용자 정의 대화상자
 
 <img src = "https://user-images.githubusercontent.com/70666097/124224778-44e2bf00-db41-11eb-8e0b-fa90bc490b07.png" width="200" height="300"> <img src = "https://user-images.githubusercontent.com/70666097/124224781-457b5580-db41-11eb-8114-4c719981d48e.png" width="200" height="300">
+
+## Lab6 과일 리스트
+
+<img src = "https://user-images.githubusercontent.com/70666097/124754326-0bf18280-df65-11eb-8eb4-3b160ebff492.png" width="200" height="300"> <img src = "https://user-images.githubusercontent.com/70666097/124754333-0dbb4600-df65-11eb-874d-c6a7d2803b6f.png" width="200" height="300">
