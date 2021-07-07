@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="6dp"
     tools:context=".MyListActivity">
 
@@ -16,7 +16,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <EditText
@@ -30,9 +30,9 @@
 
         <Button
             android:id="@+id/btnAdd"
-            android:onClick="onAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onAdd"
             android:text="ADD" />
     </LinearLayout>
 </LinearLayout>

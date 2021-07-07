@@ -15,7 +15,7 @@ public class MyLIstAdapter extends RecyclerView.Adapter<MyLIstAdapter.MyListView
     Context context;
     ArrayList<String> data;
 
-    MyLIstAdapter(Context conText,ArrayList<String> data){
+    MyLIstAdapter(Context context,ArrayList<String> data){
         this.context=context;
         this.data=data;
     }
